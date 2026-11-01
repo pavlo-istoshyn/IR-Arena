@@ -17,3 +17,4 @@ class JobListing(BaseModel):
     is_remote: bool = False
     source_url: str | None = None
     published_date: str | None = None
+    seniority: str = "mid"

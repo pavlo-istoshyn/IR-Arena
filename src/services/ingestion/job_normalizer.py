@@ -3,6 +3,7 @@
 from typing import Any
 
 from src.schemas.job import JobListing
+from src.services.ingestion.seniority import detect_seniority
 from src.services.ingestion.skill_extractor import SkillExtractor
 
 
@@ -47,6 +48,7 @@ class JobNormalizer:
         combined_text = f"{title}\n{description}"
         skills = self.extractor.extract_skills(combined_text)
         is_remote = self.extractor.extract_remote(text=combined_text, raw_job=data or search_item)
+        seniority = detect_seniority(title=title, description=description)
 
         source_url = f"https://www.arbeitsagentur.de/jobsuche/jobdetail/{refnr}"
         return JobListing(
@@ -59,4 +61,5 @@ class JobNormalizer:
             is_remote=is_remote,
             source_url=source_url,
             published_date=pub_date,
+            seniority=seniority,
         )
