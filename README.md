@@ -10,12 +10,29 @@ IR-Arena benchmarks search strategies (lexical BM25, semantic kNN, Reciprocal Ra
 
 ## Quickstart
 
-### 1. Start Elasticsearch and Kibana
+### Full Stack Deployment with Docker Compose
 
-Start the local Elasticsearch 8.15.0 and Kibana instances:
+To spin up the complete environment (Elasticsearch, Kibana, FastAPI API, and Streamlit Dashboard) in one command:
 
 ```bash
-docker compose up -d
+docker compose up -d --build
+```
+
+* **Streamlit Search Arena**: `http://localhost:8501`
+* **FastAPI Swagger Docs**: `http://localhost:8000/docs`
+* **Elasticsearch REST API**: `http://localhost:9200`
+* **Kibana Dashboard**: `http://localhost:5601`
+
+---
+
+### Local Development Setup
+
+### 1. Start Elasticsearch and Kibana
+
+Start only the storage and monitoring containers:
+
+```bash
+docker compose up -d elasticsearch kibana
 ```
 
 Verify that the cluster is healthy:

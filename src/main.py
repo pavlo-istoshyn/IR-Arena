@@ -3,6 +3,7 @@
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 
 from src.core.config import get_settings
 from src.core.es_client import close_elasticsearch_client, get_elasticsearch_client
@@ -25,6 +26,14 @@ app = FastAPI(
     version=settings.app.version,
     debug=settings.app.debug,
     lifespan=lifespan,
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 app.include_router(system_router)

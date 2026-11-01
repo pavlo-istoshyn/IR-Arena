@@ -99,3 +99,16 @@ async def test_endpoints_with_custom_settings_dependency():
             assert info_data["default_embedding_model"] == "custom-api-bert"
     finally:
         app.dependency_overrides.clear()
+
+
+@pytest.mark.asyncio
+async def test_cors_headers_present():
+    transport = ASGITransport(app=app)
+    headers = {
+        "Origin": "http://localhost:3000",
+        "Access-Control-Request-Method": "POST",
+    }
+    async with AsyncClient(transport=transport, base_url="http://test") as client:
+        response = await client.options("/search/bm25", headers=headers)
+    assert response.status_code == 200
+    assert response.headers.get("access-control-allow-origin") == "http://localhost:3000"

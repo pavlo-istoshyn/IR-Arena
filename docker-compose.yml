@@ -39,6 +39,44 @@ services:
     networks:
       - ir-arena-network
 
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ir-arena-api
+    restart: unless-stopped
+    environment:
+      - ELASTICSEARCH_URL=http://elasticsearch:9200
+      - APP_ENV=production
+      - DEBUG=false
+      - API_HOST=0.0.0.0
+      - API_PORT=8000
+    ports:
+      - "8000:8000"
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
+    networks:
+      - ir-arena-network
+    command: ["uv", "run", "uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "8000"]
+
+  dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ir-arena-dashboard
+    restart: unless-stopped
+    environment:
+      - ELASTICSEARCH_URL=http://elasticsearch:9200
+    ports:
+      - "8501:8501"
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
+    networks:
+      - ir-arena-network
+    command: ["uv", "run", "streamlit", "run", "scripts/dashboard.py", "--server.port", "8501", "--server.address", "0.0.0.0"]
+
 volumes:
   esdata:
     driver: local
