@@ -74,6 +74,16 @@ uv run uvicorn src.main:app --reload --host 0.0.0.0 --port 8000
 
 Interactive OpenAPI documentation is available at `http://localhost:8000/docs`.
 
+### 7. Launch the Streamlit dashboard
+
+Open the side-by-side comparison and benchmark analytics UI:
+
+```bash
+uv run streamlit run scripts/dashboard.py
+```
+
+The dashboard runs on `http://localhost:8501`.
+
 ## Benchmark Results
 
 Evaluation on 50 curated queries against 1,310 indexed job listings (k=10):
@@ -118,7 +128,8 @@ IR-Arena/
 ├── scripts/
 │   ├── fetch_jobs.py            # CLI for Arbeitsagentur data collection
 │   ├── index_jobs.py            # CLI for embedding and Elasticsearch bulk indexing
-│   └── evaluate.py              # CLI for running IR evaluation benchmarks
+│   ├── evaluate.py              # CLI for running IR evaluation benchmarks
+│   └── dashboard.py             # Streamlit Search Arena and analytics dashboard
 ├── src/
 │   ├── main.py                  # FastAPI application entrypoint and lifespan
 │   ├── clients/                 # Arbeitsagentur API client

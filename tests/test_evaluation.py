@@ -169,3 +169,24 @@ def test_ground_truth_dataset_valid():
     for q in queries:
         assert len(q.relevant_docs) > 0
         assert all(rel in (1, 2, 3) for rel in q.relevant_docs.values())
+
+
+def test_dashboard_helpers():
+    """Verify dashboard data loaders and DataFrame builder against evaluation results."""
+    from scripts.dashboard import (
+        build_metrics_dataframe,
+        load_benchmark_queries,
+        load_evaluation_reports,
+    )
+
+    queries = load_benchmark_queries()
+    assert len(queries) == 50
+
+    reports = load_evaluation_reports()
+    assert len(reports) == 4
+
+    df = build_metrics_dataframe(reports)
+    assert len(df) == 4
+    assert "Strategy" in df.columns
+    assert "NDCG@10" in df.columns
+    assert "MRR" in df.columns
