@@ -142,6 +142,8 @@ class ArenaDashboard:
             grade = relevant_docs[hit.id]
             rel_badge = f" | Grade: {grade}/3"
 
+        apply_url = hit.source_url or f"https://www.arbeitsagentur.de/jobsuche/jobdetail/{hit.id}"
+
         with st.container(border=True):
             st.markdown(f"**#{hit.rank} {hit.title}**")
             st.caption(
@@ -156,6 +158,19 @@ class ArenaDashboard:
                 bm25_r = ranks.get("bm25", "-")
                 knn_r = ranks.get("knn", "-")
                 st.caption(f"Source ranks: BM25 #{bm25_r}, kNN #{knn_r}")
+
+            st.link_button("🔗 Apply on Arbeitsagentur", apply_url, use_container_width=True)
+
+            with st.expander("📄 Full job description"):
+                if hit.published_date:
+                    st.caption(f"Published date: {hit.published_date}")
+                if hit.skills:
+                    st.markdown("**All extracted skills:** " + ", ".join(hit.skills))
+                st.markdown("---")
+                if hit.description:
+                    st.write(hit.description)
+                else:
+                    st.info("No detailed description available.")
 
     def render_arena_tab(self, benchmark_queries: list[BenchmarkQuery]) -> None:
         """Render the side-by-side search comparison interface."""
