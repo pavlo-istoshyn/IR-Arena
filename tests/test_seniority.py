@@ -13,9 +13,9 @@ def test_detect_junior_from_title():
 
 def test_detect_junior_from_german_description_without_junior_in_title():
     """
-    Crucial requirement: vacancies with generic titles (e.g. 'Softwareentwickler')
-    must be classified as junior if the description explicitly mentions German
-    entry-level terms like 'Berufseinsteiger', 'Berufsanfänger', 'Absolvent', etc.
+    Vacancies with generic titles (e.g. 'Softwareentwickler') must be classified
+    as junior if the description explicitly mentions German entry-level terms
+    like 'Berufseinsteiger', 'Berufsanfänger', 'Absolvent', etc.
     """
     title = "Softwareentwickler (m/w/d)"
     desc = "Wir freuen uns über Bewerbungen von engagierten Berufseinsteigern mit Kenntnissen in Python."
