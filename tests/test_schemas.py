@@ -40,6 +40,7 @@ def test_job_listing_defaults():
     assert job.is_remote is False
     assert job.source_url is None
     assert job.published_date is None
+    assert job.seniority == "mid"
 
 
 def test_job_listing_missing_required_fields():
@@ -136,6 +137,7 @@ def test_search_filters_and_request_extraction():
         city="Berlin",
         is_remote=True,
         skills=["Python", "Docker"],
+        seniority="junior",
     )
     assert isinstance(req, SearchFilters)
     filters = req.filters
@@ -143,3 +145,4 @@ def test_search_filters_and_request_extraction():
     assert filters.city == "Berlin"
     assert filters.is_remote is True
     assert filters.skills == ["Python", "Docker"]
+    assert filters.seniority == "junior"

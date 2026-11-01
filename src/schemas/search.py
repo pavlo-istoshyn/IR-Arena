@@ -15,6 +15,7 @@ class SearchFilters(BaseModel):
     city: str | None = None
     is_remote: bool | None = None
     skills: list[str] | None = None
+    seniority: str | None = None
 
 
 class SearchRequest(SearchFilters):
@@ -26,7 +27,12 @@ class SearchRequest(SearchFilters):
     @property
     def filters(self) -> SearchFilters:
         """Extract filters as a dedicated SearchFilters instance."""
-        return SearchFilters(city=self.city, is_remote=self.is_remote, skills=self.skills)
+        return SearchFilters(
+            city=self.city,
+            is_remote=self.is_remote,
+            skills=self.skills,
+            seniority=self.seniority,
+        )
 
 
 class JobHit(JobListing):

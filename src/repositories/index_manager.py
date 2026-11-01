@@ -50,6 +50,7 @@ def get_jobs_index_mapping(dims: int | None = None) -> dict[str, Any]:
                     "type": "keyword",
                     "fields": {"text": {"type": "text"}},
                 },
+                "seniority": {"type": "keyword"},
                 "source_url": {
                     "type": "keyword",
                     "index": False,

@@ -20,6 +20,8 @@ def build_search_filters(filters: SearchFilters | None = None) -> list[dict[str,
         clauses.append({"term": {"is_remote": filters.is_remote}})
     if filters.skills:
         clauses.append({"terms": {"skills": filters.skills}})
+    if filters.seniority:
+        clauses.append({"term": {"seniority": filters.seniority.lower()}})
     return clauses
 
 

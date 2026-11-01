@@ -147,11 +147,15 @@ def test_build_search_filters():
     assert build_search_filters(SearchFilters(skills=["Python", "Docker"])) == [
         {"terms": {"skills": ["Python", "Docker"]}}
     ]
+    assert build_search_filters(SearchFilters(seniority="junior")) == [
+        {"term": {"seniority": "junior"}}
+    ]
 
     all_filters = build_search_filters(
-        SearchFilters(city="Berlin", is_remote=False, skills=["FastAPI"])
+        SearchFilters(city="Berlin", is_remote=False, skills=["FastAPI"], seniority="senior")
     )
-    assert len(all_filters) == 3
+    assert len(all_filters) == 4
+    assert {"term": {"seniority": "senior"}} in all_filters
 
 
 @pytest.mark.asyncio

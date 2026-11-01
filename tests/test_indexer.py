@@ -20,6 +20,7 @@ def test_jobs_index_manager_mapping_structure():
     assert props["city"]["type"] == "keyword"
     assert props["is_remote"]["type"] == "boolean"
     assert props["skills"]["type"] == "keyword"
+    assert props["seniority"]["type"] == "keyword"
 
     embedding_prop = props["embedding"]
     assert embedding_prop["type"] == "dense_vector"

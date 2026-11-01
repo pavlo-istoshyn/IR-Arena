@@ -26,6 +26,7 @@ from src.services.fusion import (
     ReciprocalRankFusion,
     WeightedScoreFusion,
 )
+from src.services.ingestion.seniority import detect_seniority, get_seniority_badge
 from src.services.ingestion.skill_extractor import SKILL_PATTERNS
 from src.services.search_service import SearchService
 
@@ -142,12 +143,14 @@ class ArenaDashboard:
             grade = relevant_docs[hit.id]
             rel_badge = f" | Grade: {grade}/3"
 
+        seniority_code = getattr(hit, "seniority", None) or detect_seniority(hit.title, hit.description)
+        seniority_badge = get_seniority_badge(seniority_code)
         apply_url = hit.source_url or f"https://www.arbeitsagentur.de/jobsuche/jobdetail/{hit.id}"
 
         with st.container(border=True):
             st.markdown(f"**#{hit.rank} {hit.title}**")
             st.caption(
-                f"{hit.company or 'Unknown Company'} | {location}{remote_badge} "
+                f"{seniority_badge} | {hit.company or 'Unknown Company'} | {location}{remote_badge} "
                 f"| Score: `{hit.score:.4f}`{rel_badge}"
             )
             if hit.skills:
@@ -164,6 +167,7 @@ class ArenaDashboard:
             with st.expander("📄 Full job description"):
                 if hit.published_date:
                     st.caption(f"Published date: {hit.published_date}")
+                st.caption(f"Seniority level: **{seniority_badge}**")
                 if hit.skills:
                     st.markdown("**All extracted skills:** " + ", ".join(hit.skills))
                 st.markdown("---")
@@ -195,7 +199,7 @@ class ArenaDashboard:
         with col_limit:
             limit = int(st.number_input("Top-K", min_value=1, max_value=50, value=10))
 
-        col_f1, col_f2, col_f3 = st.columns([2, 1, 3])
+        col_f1, col_f2, col_f3, col_f4 = st.columns([2, 1, 2, 3])
         with col_f1:
             default_city_idx = 0
             if active_bq and active_bq.city in COMMON_CITIES:
@@ -206,6 +210,15 @@ class ArenaDashboard:
             default_remote_idx = 1 if (active_bq and active_bq.is_remote is True) else 0
             remote_choice = st.selectbox("Work mode", options=remote_options, index=default_remote_idx)
         with col_f3:
+            seniority_options = [
+                "All levels",
+                "Junior (inkl. Berufseinsteiger)",
+                "Mid-Level",
+                "Senior",
+                "Lead / Architect",
+            ]
+            seniority_choice = st.selectbox("Seniority level", options=seniority_options, index=0)
+        with col_f4:
             all_skills = sorted(SKILL_PATTERNS.keys())
             default_skills = (
                 [s for s in (active_bq.skills or []) if s in all_skills] if active_bq else []
@@ -243,12 +256,21 @@ class ArenaDashboard:
         elif remote_choice == "On-site only":
             is_remote_val = False
 
+        seniority_map = {
+            "Junior (inkl. Berufseinsteiger)": "junior",
+            "Mid-Level": "mid",
+            "Senior": "senior",
+            "Lead / Architect": "lead",
+        }
+        seniority_val = seniority_map.get(seniority_choice) if seniority_choice else None
+
         request = SearchRequest(
             query=query_text.strip(),
             limit=limit,
             city=None if city_choice == "All" else city_choice,
             is_remote=is_remote_val,
             skills=selected_skills or None,
+            seniority=seniority_val,
         )
 
         try:
