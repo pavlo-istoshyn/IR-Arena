@@ -1,0 +1,938 @@
+[
+  {
+    "id": "Q01",
+    "query": "Senior Python Backend Engineer FastAPI PostgreSQL",
+    "description": "Senior Python backend with FastAPI and PostgreSQL",
+    "skills": [
+      "Python",
+      "FastAPI"
+    ],
+    "relevant_docs": {
+      "12362-CR305958_5293CS-S": 3,
+      "16752-r14241-S": 3,
+      "13185-507241-1800843-0-S": 3,
+      "12288-4967320414-S": 2,
+      "13319-898952/1_5344CS-S": 2,
+      "12288-4975148453-S": 2,
+      "12288-4947574042-S": 2,
+      "10001-1003871444-S": 1,
+      "10001-1003430542-S": 1,
+      "10001-1003260905-S": 1
+    }
+  },
+  {
+    "id": "Q02",
+    "query": "Django Web Entwickler Python SQL",
+    "description": "Django web application developer with SQL",
+    "skills": [
+      "Django",
+      "Python"
+    ],
+    "relevant_docs": {
+      "10001-1003871444-S": 3,
+      "10001-1003562543-S": 3,
+      "10000-1204997097-S": 3,
+      "20208-f61f9e6559704ec185a-S": 2,
+      "18088-k60163.1143-S": 2,
+      "17338-c08da0f5ff17025e75-S": 2,
+      "13644-312271-S": 2,
+      "12362-CR305958_5293CS-S": 1,
+      "10001-1003828452-S": 1,
+      "10000-1208187127-S": 1,
+      "13509-00002111664001-S": 1,
+      "12288-4947574042-S": 1
+    }
+  },
+  {
+    "id": "Q03",
+    "query": "Flask REST API Python Microservices",
+    "description": "Lightweight Python microservices with Flask and REST APIs",
+    "relevant_docs": {
+      "12362-CR305958_5293CS-S": 3,
+      "13185-507241-1800843-0-S": 3,
+      "13319-898952/1_5344CS-S": 3,
+      "12288-4975148453-S": 2,
+      "19821-N2PHNDVM1YEYHIM6-S": 2,
+      "16752-r14241-S": 2,
+      "12288-4967320414-S": 2,
+      "12265-271357_JB5262568-S": 1,
+      "10001-1003871444-S": 1,
+      "19913-3074751792188001-S": 1,
+      "18088-k60163.1143-S": 1,
+      "10001-1003260905-S": 1
+    }
+  },
+  {
+    "id": "Q04",
+    "query": "SQLAlchemy PostgreSQL Alembic Python Backend",
+    "description": "Database-heavy Python backend using SQLAlchemy ORM",
+    "skills": [
+      "SQLAlchemy",
+      "PostgreSQL"
+    ],
+    "relevant_docs": {
+      "16752-r14241-S": 3,
+      "12362-CR305958_5293CS-S": 3,
+      "12288-4967320414-S": 3,
+      "13319-898952/1_5344CS-S": 2,
+      "12288-4975148453-S": 2,
+      "12288-4947574042-S": 2,
+      "10001-1003791418-S": 2,
+      "10001-1003430542-S": 1,
+      "10001-1003260905-S": 1,
+      "12362-TR-302111_624784LS-S": 1,
+      "10001-1003713573-S": 1
+    }
+  },
+  {
+    "id": "Q05",
+    "query": "AsyncIO FastAPI Pydantic High Performance API",
+    "description": "Asynchronous Python API development with Pydantic and FastAPI",
+    "relevant_docs": {
+      "16752-r14241-S": 3,
+      "13185-507241-1800843-0-S": 3,
+      "12362-CR305958_5293CS-S": 3,
+      "12288-4975148453-S": 2,
+      "12288-4967320414-S": 2,
+      "18306-BB-634806-7878-7052-S": 2,
+      "13319-898952/1_5344CS-S": 2,
+      "12288-4951949023-S": 1,
+      "12288-4947574042-S": 1,
+      "10001-1003430542-S": 1
+    }
+  },
+  {
+    "id": "Q06",
+    "query": "Python Redis Caching Backend Architecture",
+    "description": "Distributed backend systems with Redis caching",
+    "relevant_docs": {
+      "16752-r14241-S": 3,
+      "13185-507241-1800843-0-S": 3,
+      "12362-CR305958_5293CS-S": 3,
+      "12288-4967320414-S": 2,
+      "19821-N2PHNDVM1YEYHIM6-S": 2,
+      "13319-898952/1_5344CS-S": 2,
+      "12288-4975148453-S": 2,
+      "10001-1003912135-S": 1,
+      "10001-1003791418-S": 1,
+      "10001-1003613632-S": 1,
+      "10001-1003537726-S": 1,
+      "10001-1003219328-S": 1
+    }
+  },
+  {
+    "id": "Q07",
+    "query": "GraphQL REST API Python Backend Developer",
+    "description": "API design and implementation with GraphQL and REST",
+    "relevant_docs": {
+      "13509-0000211108c002-S": 3,
+      "12288-4966022075-S": 3,
+      "12288-4951949023-S": 3,
+      "12288-4947574042-S": 2,
+      "10001-1003430542-S": 2,
+      "10001-1002837953-S": 2,
+      "13635-3abc21ff_JB5267830-S": 2,
+      "13509-00002111664001-S": 1,
+      "10001-1003781046-S": 1,
+      "10001-1001775591-S": 1,
+      "10001-1001601601-S": 1
+    }
+  },
+  {
+    "id": "Q08",
+    "query": "Python Kafka Event Driven Microservices",
+    "description": "Event-driven architecture with Apache Kafka and Python",
+    "relevant_docs": {
+      "13635-0822a73c_JB5278182-S": 3,
+      "12811-2355892-S": 3,
+      "15158-2026287051-S": 3,
+      "12608-1461822-28261-1-S": 2,
+      "12288-4932478814-S": 2,
+      "12265-517918_JB5280861-S": 2,
+      "10001-1003797292-S": 2,
+      "10001-1003732684-S": 1,
+      "10001-1003717099-S": 1,
+      "10001-1003664872-S": 1,
+      "10001-1003613632-S": 1,
+      "10000-1206192745-S": 1
+    }
+  },
+  {
+    "id": "Q09",
+    "query": "Docker Kubernetes Python Cloud Native Deployment",
+    "description": "Containerized Python applications on Kubernetes",
+    "relevant_docs": {
+      "16752-r14241-S": 3,
+      "12697-k10989.12135-S": 3,
+      "12098-13891650-S": 3,
+      "10001-1003828452-S": 2,
+      "10001-1003781046-S": 2,
+      "10001-1003848974-S": 2,
+      "10001-1003844598-S": 2,
+      "10001-1003729645-S": 1,
+      "20385-2347902-S": 1,
+      "17902-k59932.6664-S": 1
+    }
+  },
+  {
+    "id": "Q10",
+    "query": "AWS Cloud Python Backend Serverless EC2 S3",
+    "description": "Python backend engineering on Amazon Web Services",
+    "relevant_docs": {
+      "12362-CR305958_5293CS-S": 3,
+      "12634-BB-646431-7878-9881-S": 3,
+      "12288-4975148453-S": 3,
+      "19821-N2PHNDVM1YEYHIM6-S": 2,
+      "16752-r14241-S": 2,
+      "13185-507241-1800843-0-S": 2,
+      "12288-4967320414-S": 2,
+      "10001-1003174398-S": 1,
+      "20391-0068056387-S": 1,
+      "15794-470286_49921-1-S": 1,
+      "16752-r18165-S": 1
+    }
+  },
+  {
+    "id": "Q11",
+    "query": "Azure Cloud Python Software Engineer",
+    "description": "Enterprise Python development on Microsoft Azure",
+    "relevant_docs": {
+      "16752-r14241-S": 3,
+      "12362-TR-302111_624784LS-S": 3,
+      "12362-CR305958_5293CS-S": 3,
+      "12288-4967320414-S": 2,
+      "10001-1003673523-S": 2,
+      "10000-1207716495-S": 2,
+      "15794-470286_49921-1-S": 2,
+      "13892-3133796_4060973-S": 1,
+      "13319-899373/1_5505CS-S": 1,
+      "12265-523549_JB5267883-S": 1,
+      "12265-516760_JB5265657-S": 1,
+      "12098-13891650-S": 1
+    }
+  },
+  {
+    "id": "Q12",
+    "query": "Google Cloud GCP Python Data Backend",
+    "description": "Python backend and data services on Google Cloud Platform",
+    "relevant_docs": {
+      "15794-470286_49921-1-S": 3,
+      "16752-r18165-S": 3,
+      "16752-r5446-S": 3,
+      "16752-r5333-S": 2,
+      "16752-r14241-S": 2,
+      "10001-1003732684-S": 2,
+      "10001-1003848974-S": 2,
+      "10001-1003729645-S": 1,
+      "19913-3074751792188001-S": 1,
+      "17486-143476084111745734-S": 1,
+      "15794-468756_49070-1-S": 1,
+      "12288-4967320414-S": 1
+    }
+  },
+  {
+    "id": "Q13",
+    "query": "LLM RAG Generative AI Engineer Python",
+    "description": "Building RAG pipelines and LLM agents in Python",
+    "relevant_docs": {
+      "20079-GR6IFL6L-S": 3,
+      "12362-CR305958_5293CS-S": 3,
+      "15835-000903004c9001-S": 3,
+      "12288-4975148453-S": 2,
+      "10001-1003523811-S": 2,
+      "10001-1003862153-S": 2,
+      "10001-1002992150-S": 2,
+      "19718-r18076-S": 1,
+      "16752-r14241-S": 1,
+      "14688-20250r9v795j-001-S": 1
+    }
+  },
+  {
+    "id": "Q14",
+    "query": "LangChain LlamaIndex AI Agents OpenAI Python",
+    "description": "Agentic AI workflows with LangChain and OpenAI",
+    "relevant_docs": {
+      "12362-CR305958_5293CS-S": 3,
+      "10001-1002992150-S": 3,
+      "20079-GR6IFL6L-S": 3,
+      "12288-4975148453-S": 2,
+      "10001-1003867123-S": 2,
+      "14688-20250r9v795j-001-S": 2,
+      "15835-000903004c9001-S": 2,
+      "10001-1003174398-S": 1,
+      "19718-r18076-S": 1,
+      "15794-470187_49892-1-S": 1,
+      "10001-1003537672-S": 1,
+      "10001-1003862153-S": 1
+    }
+  },
+  {
+    "id": "Q15",
+    "query": "Vector Database Embeddings FAISS Semantic Search",
+    "description": "Vector search and embedding pipelines in Python",
+    "relevant_docs": {
+      "20208-be7978831d1446cfb20-S": 3,
+      "20208-baea7b4704c54d21b7b-S": 3,
+      "19913-3074751792188001-S": 3,
+      "19821-N2PHNDVM1YEYHIM6-S": 2,
+      "16752-r14241-S": 2,
+      "12288-4975148453-S": 2,
+      "10001-1003523811-S": 2,
+      "10000-1208372964-S": 1,
+      "20390-978522636-S": 1,
+      "16532-0067476342-S": 1,
+      "15794-470187_49892-1-S": 1,
+      "14688-20250r9v795j-001-S": 1
+    }
+  },
+  {
+    "id": "Q16",
+    "query": "Elasticsearch Search Engine Python Backend",
+    "description": "Full-text and vector search backend with Elasticsearch",
+    "relevant_docs": {
+      "12362-CR305958_5293CS-S": 3,
+      "11070-1628868-1-S": 3,
+      "20391-0068056387-S": 3,
+      "19380-w0ugd16pnn-S": 2,
+      "12288-4975148453-S": 2,
+      "19821-N2PHNDVM1YEYHIM6-S": 2,
+      "16752-r14241-S": 2,
+      "13185-507241-1800843-0-S": 1,
+      "10001-1003791418-S": 1,
+      "20471-2358344-S": 1,
+      "20390-978522636-S": 1
+    }
+  },
+  {
+    "id": "Q17",
+    "query": "Machine Learning Engineer Python Model Deployment",
+    "description": "Productionizing ML models with Python and Docker",
+    "relevant_docs": {
+      "19175-0068277696-S": 3,
+      "10001-1003523811-S": 3,
+      "21211-WP13564-R2-S": 3,
+      "21211-WP13563-R2-S": 2,
+      "21211-WP13562-R2-S": 2,
+      "21211-WP13561-R2-S": 2,
+      "21211-WP13560-R2-S": 2,
+      "21211-WP13559-R2-S": 1,
+      "21211-WP13558-R2-S": 1,
+      "21211-WP13557-R2-S": 1
+    }
+  },
+  {
+    "id": "Q18",
+    "query": "Deep Learning Computer Vision PyTorch TensorFlow Python",
+    "description": "Deep learning and image processing roles",
+    "relevant_docs": {
+      "19175-0068277696-S": 3,
+      "12265-487660_JB5269614-S": 3,
+      "10001-1003734918-S": 3,
+      "15939-BB-635336-7878-6694-S": 2,
+      "14915-44522514-1021-S": 2,
+      "14688-2026cql4nofg-000-S": 2,
+      "14688-20266jf81388-000-S": 2,
+      "12787-270196071026-S": 1,
+      "21211-WP13564-R2-S": 1,
+      "21211-WP13563-R2-S": 1,
+      "21211-WP13562-R2-S": 1,
+      "21211-WP13561-R2-S": 1
+    }
+  },
+  {
+    "id": "Q19",
+    "query": "Natural Language Processing NLP Text Mining Python",
+    "description": "NLP and text analytics with transformers and LLMs",
+    "relevant_docs": {
+      "10001-1003523811-S": 3,
+      "10001-1003840353-S": 3,
+      "20208-50e689aec5ea4bd2a6d-S": 3,
+      "20079-GR6IFL6L-S": 2,
+      "14177-44507524-1014-S": 2,
+      "10001-1003734918-S": 2,
+      "10001-1003704433-S": 2,
+      "10000-1208372964-S": 1,
+      "21211-WP13558-R2-S": 1,
+      "14915-44522514-1021-S": 1,
+      "20208-be7978831d1446cfb20-S": 1
+    }
+  },
+  {
+    "id": "Q20",
+    "query": "Data Engineer Python ETL Data Warehouse SQL",
+    "description": "Building scalable ETL pipelines and data warehouses",
+    "skills": [
+      "SQL",
+      "Python"
+    ],
+    "relevant_docs": {
+      "10001-1003688345-S": 3,
+      "10001-1003732684-S": 3,
+      "10001-1003710548-S": 3,
+      "16897-04dff385a09c509b-S": 2,
+      "15548-1530218-1-S": 2,
+      "15474-36373-S": 2,
+      "13884-346291-S": 2,
+      "13410-k13572.15898-S": 1,
+      "10001-1003713573-S": 1,
+      "10001-1003688333-S": 1,
+      "10000-1204800274-S": 1,
+      "15548-1601783-1-S": 1
+    }
+  },
+  {
+    "id": "Q21",
+    "query": "Data Scientist Python Statistik Machine Learning",
+    "description": "Data science, statistical modeling, and predictive analytics",
+    "relevant_docs": {
+      "21085-16771000-S": 3,
+      "12608-1437027-28033-1-S": 3,
+      "12601-12053-1791416-0-S": 3,
+      "21046-16846209-S": 2,
+      "13319-898751/1_5322CS-S": 2,
+      "10001-1003840353-S": 2,
+      "15548-1430565-1-S": 2,
+      "12787-272617221026-S": 1,
+      "12787-269302121026-S": 1,
+      "21046-16846234-S": 1
+    }
+  },
+  {
+    "id": "Q22",
+    "query": "Anthropic Claude OpenAI LLM Integration Backend",
+    "description": "Integrating commercial LLM APIs into backend services",
+    "relevant_docs": {
+      "12362-CR305958_5293CS-S": 3,
+      "12288-4975148453-S": 3,
+      "16752-r14241-S": 3,
+      "13185-507241-1800843-0-S": 2,
+      "10001-1003127660-S": 2,
+      "10001-1003174398-S": 2,
+      "10001-1003867123-S": 2,
+      "19821-N2PHNDVM1YEYHIM6-S": 1,
+      "12288-4967320414-S": 1,
+      "10000-1202580228-S": 1,
+      "19913-3074751792188001-S": 1
+    }
+  },
+  {
+    "id": "Q23",
+    "query": "MLOps Platform Engineer Python Kubernetes CI/CD",
+    "description": "ML infrastructure, training pipelines, and automated deployment",
+    "relevant_docs": {
+      "21211-WP13564-R2-S": 3,
+      "21211-WP13563-R2-S": 3,
+      "21211-WP13562-R2-S": 3,
+      "21211-WP13561-R2-S": 2,
+      "21211-WP13560-R2-S": 2,
+      "21211-WP13559-R2-S": 2,
+      "21211-WP13558-R2-S": 2,
+      "21211-WP13557-R2-S": 1,
+      "21211-WP13556-R2-S": 1,
+      "21211-WP13555-R2-S": 1,
+      "18329-C8C0K2pW-S": 1,
+      "16947-977724684-S": 1
+    }
+  },
+  {
+    "id": "Q24",
+    "query": "GenAI Chatbot Conversational AI Python RAG",
+    "description": "Developing enterprise chatbots and conversational assistants",
+    "relevant_docs": {
+      "16752-r14241-S": 3,
+      "13185-506821-1793267-0-S": 3,
+      "20079-GR6IFL6L-S": 3,
+      "10001-1003862153-S": 2,
+      "19913-3074751792188001-S": 2,
+      "13185-506792-1791796-0-S": 2,
+      "10001-1003816837-S": 2,
+      "10001-1003523811-S": 1,
+      "10001-1003127660-S": 1,
+      "19821-N2PHNDVM1YEYHIM6-S": 1,
+      "13185-507241-1800843-0-S": 1,
+      "12608-1437104-28033-2-S": 1
+    }
+  },
+  {
+    "id": "Q25",
+    "query": "Kuenstliche Intelligenz Sprachmodelle und Vektordatenbanken",
+    "description": "German query for AI language models and vector databases",
+    "relevant_docs": {
+      "20208-be7978831d1446cfb20-S": 3,
+      "19821-N2PHNDVM1YEYHIM6-S": 3,
+      "16752-r14241-S": 3,
+      "12362-CR305958_5293CS-S": 2,
+      "10001-1003523811-S": 2,
+      "10001-1003537672-S": 2,
+      "20208-baea7b4704c54d21b7b-S": 2,
+      "19913-3074751792188001-S": 1,
+      "12288-4975148453-S": 1,
+      "10000-1208372964-S": 1
+    }
+  },
+  {
+    "id": "Q26",
+    "query": "Moderne Schnittstellenentwicklung und Webservices in Python",
+    "description": "German semantic query for API and web service engineering",
+    "relevant_docs": {
+      "12362-CR305958_5293CS-S": 3,
+      "12265-271357_JB5262568-S": 3,
+      "13185-507241-1800843-0-S": 3,
+      "12288-4975148453-S": 2,
+      "12288-4951949023-S": 2,
+      "12288-4947574042-S": 2,
+      "10001-1003430542-S": 2,
+      "18088-k60163.1143-S": 1,
+      "13509-00002111664001-S": 1,
+      "10001-1003871444-S": 1,
+      "13319-898952/1_5344CS-S": 1,
+      "12787-266858020926-S": 1
+    }
+  },
+  {
+    "id": "Q27",
+    "query": "Skalierbare Backend Architektur und Verteilte Systeme",
+    "description": "German query for scalable distributed backend architectures",
+    "relevant_docs": {
+      "12811-2355892-S": 3,
+      "12787-266858020926-S": 3,
+      "10001-1003467785-S": 3,
+      "19821-N2PHNDVM1YEYHIM6-S": 2,
+      "16752-r14241-S": 2,
+      "13869-13891638-S": 2,
+      "13509-00002111664001-S": 2,
+      "12465-1607977-1-S": 1,
+      "12288-4975148453-S": 1,
+      "12288-4967320414-S": 1,
+      "13410-k13572.15879-S": 1,
+      "10001-1003729645-S": 1
+    }
+  },
+  {
+    "id": "Q28",
+    "query": "Automatisierte Softwaretests Qualitaetssicherung pytest",
+    "description": "German query for automated software testing and QA in Python",
+    "relevant_docs": {
+      "12265-502096_JB5271027-S": 3,
+      "12265-522316_JB5282421-S": 3,
+      "12362-TR-304272_625423LS-S": 3,
+      "10001-1003639139-S": 2,
+      "13645-283946-S": 2,
+      "12265-518989_JB5280910-S": 2,
+      "12265-506002_JB5277124-S": 2,
+      "20628-16341187-S": 1,
+      "19821-N2PHNDVM1YEYHIM6-S": 1,
+      "16752-r14241-S": 1,
+      "12787-266858020926-S": 1
+    }
+  },
+  {
+    "id": "Q29",
+    "query": "Relationale Datenbanken Datenmodellierung PostgreSQL SQL",
+    "description": "German query for relational database design and optimization",
+    "relevant_docs": {
+      "12362-CR305958_5293CS-S": 3,
+      "21046-16846209-S": 3,
+      "12288-4947574042-S": 3,
+      "10001-1003871444-S": 2,
+      "10001-1003732684-S": 2,
+      "10001-1003688333-S": 2,
+      "10001-1003430542-S": 2,
+      "10001-1003843562-S": 1,
+      "10001-1003710548-S": 1,
+      "10001-1003688345-S": 1
+    }
+  },
+  {
+    "id": "Q30",
+    "query": "Containerisierung und Cloud Infrastruktur mit Linux",
+    "description": "German query for Linux and container infrastructure",
+    "relevant_docs": {
+      "12265-485644_JB5268438-S": 3,
+      "12634-BB-646431-7878-9881-S": 3,
+      "12265-517117_JB5268616-S": 3,
+      "10001-1003656177-S": 2,
+      "10001-1002861400-S": 2,
+      "10001-1002215961-S": 2,
+      "10001-1003859961-S": 2,
+      "10001-1003859955-S": 1,
+      "10001-1003859948-S": 1,
+      "10001-1003859941-S": 1,
+      "10001-1003859937-S": 1,
+      "10000-1206949335-S": 1
+    }
+  },
+  {
+    "id": "Q31",
+    "query": "Kontinuierliche Integration und Deployment Pipelines Git",
+    "description": "German query for CI/CD automation and Git workflows",
+    "relevant_docs": {
+      "10001-1002861400-S": 3,
+      "17700-0062595909-S": 3,
+      "16752-r14241-S": 3,
+      "12362-CR305958_5293CS-S": 2,
+      "10001-1003502693-S": 2,
+      "10000-1204997097-S": 2,
+      "10001-1003639139-S": 2,
+      "10000-1207391408-S": 1,
+      "15794-468369_48820-1-S": 1,
+      "13319-898952/1_5344CS-S": 1,
+      "12288-4964543918-S": 1
+    }
+  },
+  {
+    "id": "Q32",
+    "query": "Datenanalyse und Verarbeitung grosser Datenmengen",
+    "description": "German query for big data processing and analytics",
+    "relevant_docs": {
+      "15835-000903005a4001-S": 3,
+      "13319-898751/1_5322CS-S": 3,
+      "10001-1003688345-S": 3,
+      "15794-471158_50210-1-S": 2,
+      "15548-1530218-1-S": 2,
+      "13635-59e4c50d_JB5280489-S": 2,
+      "12456-1645525-1-S": 2,
+      "12265-518419_JB5276908-S": 1,
+      "10001-1003806867-S": 1,
+      "10001-1003732684-S": 1,
+      "10001-1003713573-S": 1,
+      "10001-1003251996-S": 1
+    }
+  },
+  {
+    "id": "Q33",
+    "query": "Agile Softwareentwicklung Scrum Clean Code Python",
+    "description": "German query for agile software craftsmanship in Python",
+    "relevant_docs": {
+      "12265-518989_JB5280910-S": 3,
+      "13645-283946-S": 3,
+      "12265-271357_JB5262568-S": 3,
+      "10001-1003430542-S": 2,
+      "10000-1208399729-S": 2,
+      "19028-aw17yu6qdk-S": 2,
+      "16752-r14241-S": 2,
+      "13644-236954-S": 1,
+      "12265-486502_JB5268492-S": 1,
+      "12288-4975148453-S": 1
+    }
+  },
+  {
+    "id": "Q34",
+    "query": "IT Sicherheit und Sichere Backend Anwendungen",
+    "description": "German query for secure backend application development",
+    "relevant_docs": {
+      "10001-1002520276-S": 3,
+      "12811-2358491-S": 3,
+      "10001-1003430542-S": 3,
+      "10001-1003260905-S": 2,
+      "12362-CR305958_5293CS-S": 2,
+      "10001-1003639139-S": 2,
+      "10001-1001798027-S": 2,
+      "17700-0062595909-S": 1,
+      "12634-BB-646431-7878-9881-S": 1,
+      "12608-1461822-28261-1-S": 1,
+      "12288-4966022075-S": 1
+    }
+  },
+  {
+    "id": "Q35",
+    "query": "Junior Python Entwickler Einstieg Softwareentwicklung",
+    "description": "Entry-level / Junior Python developer roles",
+    "relevant_docs": {
+      "12265-398566_JB5193084-S": 3,
+      "20208-63365f585a914d16a3a-S": 3,
+      "17338-c08da0f5ff17025e75-S": 3,
+      "13644-312271-S": 2,
+      "12265-271357_JB5262568-S": 2,
+      "10000-1204997097-S": 2,
+      "10001-1003884363-S": 2,
+      "10001-1003562543-S": 1,
+      "13645-283946-S": 1,
+      "10001-1003844598-S": 1,
+      "20208-f61f9e6559704ec185a-S": 1,
+      "19028-aw17yu6qdk-S": 1
+    }
+  },
+  {
+    "id": "Q36",
+    "query": "Lead Python Developer Software Architect",
+    "description": "Technical leadership and software architecture roles",
+    "relevant_docs": {
+      "10001-1002752946-S": 3,
+      "10001-1003467785-S": 3,
+      "13635-0822a73c_JB5278182-S": 3,
+      "20628-16341187-S": 2,
+      "15794-470192_49894-1-S": 2,
+      "13509-0000211108c002-S": 2,
+      "12649-1623294-2-S": 2,
+      "10001-1003809672-S": 1,
+      "10001-1003694111-S": 1,
+      "10001-1003467920-S": 1,
+      "19244-1648332-S": 1,
+      "16752-r5333-S": 1
+    }
+  },
+  {
+    "id": "Q37",
+    "query": "Fullstack Developer Python TypeScript React Web",
+    "description": "Fullstack engineer combining Python backend with modern frontend",
+    "relevant_docs": {
+      "20391-0068064142-S": 3,
+      "12787-266858020926-S": 3,
+      "12465-1607977-1-S": 3,
+      "10000-1207391408-S": 2,
+      "20208-f61f9e6559704ec185a-S": 2,
+      "13319-896078/1_625192LS-S": 2,
+      "12362-CR305958_5293CS-S": 2,
+      "12288-4975148453-S": 1,
+      "10001-1003871444-S": 1,
+      "10001-1003830191-S": 1
+    }
+  },
+  {
+    "id": "Q38",
+    "query": "AI Consultant Künstliche Intelligenz Beratung Python",
+    "description": "Customer-facing AI/ML consulting and prototyping in Python",
+    "relevant_docs": {
+      "17311-44459230-922-S": 3,
+      "16752-r15303-S": 3,
+      "16573-2350321-S": 3,
+      "15794-471556_50427-1-S": 2,
+      "15794-470192_49894-1-S": 2,
+      "15794-470187_49892-1-S": 2,
+      "14688-20250r9v795j-001-S": 2,
+      "10001-1003867123-S": 1,
+      "10001-1003862153-S": 1,
+      "10001-1003704433-S": 1,
+      "10001-1003122833-S": 1,
+      "19913-3074751792188001-S": 1
+    }
+  },
+  {
+    "id": "Q39",
+    "query": "Python Platform Engineer Internal Developer Tooling",
+    "description": "Platform engineering and developer tooling in Python",
+    "relevant_docs": {
+      "10001-1003613632-S": 3,
+      "12634-BB-646431-7878-9881-S": 3,
+      "12608-1359880-28396-1-S": 3,
+      "16752-r14241-S": 2,
+      "20385-2347902-S": 2,
+      "16947-973493232-S": 2,
+      "14688-20266jf81388-000-S": 2,
+      "13552-95JQBAYRDGV766Y6-S": 1,
+      "13319-899373/1_5505CS-S": 1,
+      "10001-1002215961-S": 1,
+      "12727-FN1383846-S": 1,
+      "10001-1003673523-S": 1
+    }
+  },
+  {
+    "id": "Q40",
+    "query": "Wissenschaftlicher Mitarbeiter Forschung KI Python",
+    "description": "Academic and R&D research positions in AI and Python",
+    "relevant_docs": {
+      "14915-44522514-1021-S": 3,
+      "16947-973493232-S": 3,
+      "14177-44507524-1014-S": 3,
+      "12265-487660_JB5269614-S": 2,
+      "10000-1208137102-S": 2,
+      "18593-1645010-1-S": 2,
+      "18593-1639884-1-S": 2,
+      "12265-523549_JB5267883-S": 1,
+      "10001-1003887490-S": 1,
+      "10001-1003883097-S": 1,
+      "10001-1003856423-S": 1
+    }
+  },
+  {
+    "id": "Q41",
+    "query": "Python Backend Engineer FinTech Banking Payment",
+    "description": "Python backend roles in financial services and banking",
+    "relevant_docs": {
+      "12362-CR305958_5293CS-S": 3,
+      "14434-X4QG7DXGKTWI93CU-S": 3,
+      "12288-4947574042-S": 3,
+      "12098-13891650-S": 2,
+      "10001-1003430542-S": 2,
+      "13185-507241-1800843-0-S": 2,
+      "17700-0062595909-S": 2,
+      "16752-r14241-S": 1,
+      "12265-281409_JB5280706-S": 1,
+      "10001-1003260905-S": 1
+    }
+  },
+  {
+    "id": "Q42",
+    "query": "Python Automation Scripting Linux Bash Testing",
+    "description": "Automation and scripting engineer using Python and Bash",
+    "relevant_docs": {
+      "10001-1001798027-S": 3,
+      "10001-1003862498-S": 3,
+      "12265-522523_JB5261814-S": 3,
+      "12265-502096_JB5271027-S": 2,
+      "10001-1002861400-S": 2,
+      "19244-2245692-S": 2,
+      "15933-0061079837-S": 2,
+      "15297-0gddsy3w-S": 1,
+      "14922-139497-S": 1,
+      "13669-FDNUU227UEB34SYN-S": 1,
+      "12265-517117_JB5268616-S": 1,
+      "12265-486841_JB5268507-S": 1
+    }
+  },
+  {
+    "id": "Q43",
+    "query": "Python Backend Entwickler Homeoffice",
+    "description": "Remote Python backend developer roles across Germany",
+    "is_remote": true,
+    "relevant_docs": {
+      "19821-N2PHNDVM1YEYHIM6-S": 3,
+      "10001-1003781046-S": 3,
+      "12787-266858020926-S": 3,
+      "12288-4967320414-S": 2,
+      "12288-4947574042-S": 2,
+      "10001-1003430542-S": 2,
+      "10000-1206891084-S": 2,
+      "20391-0068064142-S": 1,
+      "19913-3074751792188001-S": 1,
+      "10001-1003871444-S": 1,
+      "12288-4966022075-S": 1
+    }
+  },
+  {
+    "id": "Q44",
+    "query": "AI Engineer LLM RAG Remote Work",
+    "description": "Remote AI / LLM engineering positions",
+    "is_remote": true,
+    "relevant_docs": {
+      "10001-1003523811-S": 3,
+      "10001-1003862153-S": 3,
+      "10001-1003537672-S": 3,
+      "10001-1003840353-S": 2,
+      "19718-r18076-S": 2,
+      "15794-470187_49892-1-S": 2,
+      "10001-1003467951-S": 2,
+      "19821-N2PHNDVM1YEYHIM6-S": 1,
+      "19913-3056331792188001-S": 1,
+      "16532-0067476342-S": 1,
+      "15835-000903004c9001-S": 1,
+      "10001-1003867123-S": 1
+    }
+  },
+  {
+    "id": "Q45",
+    "query": "Python Software Engineer Berlin",
+    "description": "City-filtered search for Python engineers in Berlin",
+    "city": "Berlin",
+    "relevant_docs": {
+      "10001-1002215961-S": 3,
+      "18251-33612-S": 3,
+      "14412-44489256-107-S": 3,
+      "17296-0008387:01-S": 2,
+      "10000-1207108489-S": 2,
+      "10001-1001798027-S": 2,
+      "15933-0061079837-S": 2,
+      "15158-2026287051-S": 1,
+      "13635-e249683d_JB5276673-S": 1,
+      "10001-1003883299-S": 1
+    }
+  },
+  {
+    "id": "Q46",
+    "query": "Python Entwickler Künstliche Intelligenz München",
+    "description": "City-filtered search for Python & AI roles in Munich",
+    "city": "München",
+    "relevant_docs": {
+      "20208-f61f9e6559704ec185a-S": 3,
+      "12288-4967320414-S": 3,
+      "12265-485644_JB5268438-S": 3,
+      "10001-1003884363-S": 2,
+      "14688-2026cql4nofg-000-S": 2,
+      "14688-20266jf81388-000-S": 2,
+      "16947-977724684-S": 2,
+      "20208-be7978831d1446cfb20-S": 1,
+      "20208-baea7b4704c54d21b7b-S": 1,
+      "20208-50e689aec5ea4bd2a6d-S": 1,
+      "17486-135193514559316678-S": 1
+    }
+  },
+  {
+    "id": "Q47",
+    "query": "Python Backend Cloud Engineer Hamburg",
+    "description": "City-filtered search for Python backend engineers in Hamburg",
+    "city": "Hamburg",
+    "relevant_docs": {
+      "10000-1207716495-S": 3,
+      "10001-1003610826-S": 3,
+      "15548-1594230-1-S": 3,
+      "12634-BB-645785-7878-3504-S": 2,
+      "17338-c2de5ff0cd55000215-S": 2,
+      "13545-DZTBHCDPFNHF7DSR-S": 2,
+      "12265-523126_JB5266379-S": 2,
+      "17338-b654a534c257b2a74e-S": 1,
+      "13644-265788-S": 1,
+      "10001-1003685989-S": 1,
+      "13334-00005f66810001-S": 1,
+      "12811-2313924-S": 1
+    }
+  },
+  {
+    "id": "Q48",
+    "query": "Senior Python Developer Frankfurt am Main",
+    "description": "City-filtered search for Python developers in Frankfurt",
+    "city": "Frankfurt am Main",
+    "relevant_docs": {
+      "12465-1607977-1-S": 3,
+      "20391-0068064142-S": 3,
+      "12811-2153324-S": 3,
+      "16572-44484392-105-S": 2,
+      "13410-k13572.15924-S": 2,
+      "13410-k13572.15898-S": 2,
+      "12456-1645525-1-S": 2,
+      "10001-1003900546-S": 1,
+      "21211-WP13559-R2-S": 1,
+      "20628-16341187-S": 1,
+      "20391-0068056387-S": 1,
+      "13410-k13572.15857-S": 1
+    }
+  },
+  {
+    "id": "Q49",
+    "query": "Data Engineer Python Remote SQL",
+    "description": "Remote Data Engineering roles with Python and SQL",
+    "is_remote": true,
+    "relevant_docs": {
+      "10001-1003688345-S": 3,
+      "10001-1003732684-S": 3,
+      "19821-00OGWU5F4ZVV2LE2-S": 3,
+      "15835-000903005a4001-S": 2,
+      "15835-00090300248003-S": 2,
+      "15794-471158_50210-1-S": 2,
+      "15794-468756_49070-1-S": 2,
+      "15747-16686701-S": 1,
+      "13635-fa2f5bda_JB5283017-S": 1,
+      "13635-ac14b2a2_JB5258563-S": 1
+    }
+  },
+  {
+    "id": "Q50",
+    "query": "FastAPI Docker Python Backend Remote",
+    "description": "Remote FastAPI + Docker stack with explicit skills filter",
+    "is_remote": true,
+    "relevant_docs": {
+      "12288-4967320414-S": 3,
+      "12787-266858020926-S": 3,
+      "10001-1003584570-S": 3,
+      "19821-N2PHNDVM1YEYHIM6-S": 2,
+      "19913-3074751792188001-S": 2,
+      "12288-4947574042-S": 2,
+      "10001-1003871444-S": 2,
+      "10001-1003467951-S": 1,
+      "10001-1003430542-S": 1,
+      "10001-1003174398-S": 1,
+      "20391-0068064142-S": 1,
+      "18279-1442-4217-bb7d3-S": 1
+    }
+  }
+]
