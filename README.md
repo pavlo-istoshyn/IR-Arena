@@ -25,7 +25,7 @@ docker compose up -d --build
 
 ---
 
-### Local Development Setup
+## Local Development Setup
 
 ### 1. Start Elasticsearch and Kibana
 
@@ -116,26 +116,30 @@ Hybrid Reciprocal Rank Fusion achieves the highest ranking quality, improving MR
 
 ## Search API Endpoints
 
-All search endpoints accept POST requests with JSON payload containing `query` and optional filters (`city`, `is_remote`, `skills`):
+All search endpoints accept POST requests with JSON payload containing `query` and optional filters (`city`, `is_remote`, `skills`, `seniority`):
 
 * `POST /search/bm25`: BM25 lexical search using a custom German analyzer and title/skill field boosting.
 * `POST /search/knn`: Vector search using cosine similarity on 384-dimensional dense embeddings.
 * `POST /search/hybrid`: Concurrent BM25 and kNN retrieval merged with Reciprocal Rank Fusion (k=60).
 * `GET /health`: Cluster health check returning Elasticsearch connectivity status.
 
+Supported values for `seniority`: `"junior"`, `"mid"`, `"senior"`, `"lead"`.
+
 Example request:
 
 ```bash
 curl -X POST http://localhost:8000/search/hybrid \
   -H "Content-Type: application/json" \
-  -d '{"query": "Python FastAPI", "city": "Berlin", "limit": 10}'
+  -d '{"query": "Python FastAPI", "city": "Berlin", "seniority": "junior", "limit": 10}'
 ```
 
 ## Project Layout
 
 ```
 IR-Arena/
-├── docker-compose.yml           # Elasticsearch 8.15.0 and Kibana
+├── docker-compose.yml           # Full-stack composition (Elasticsearch, Kibana, API, Dashboard)
+├── Dockerfile                   # Production container with pre-cached embedding weights
+├── .dockerignore                # Build context exclusions
 ├── pyproject.toml               # Project metadata, dependencies, and tool settings
 ├── .env.example                 # Environment variable templates
 ├── data/
@@ -145,10 +149,11 @@ IR-Arena/
 ├── scripts/
 │   ├── fetch_jobs.py            # CLI for Arbeitsagentur data collection
 │   ├── index_jobs.py            # CLI for embedding and Elasticsearch bulk indexing
+│   ├── enrich_jobs.py           # CLI for re-extracting skills and detecting seniority
 │   ├── evaluate.py              # CLI for running IR evaluation benchmarks
 │   └── dashboard.py             # Streamlit Search Arena and analytics dashboard
 ├── src/
-│   ├── main.py                  # FastAPI application entrypoint and lifespan
+│   ├── main.py                  # FastAPI application entrypoint, CORS, and lifespan
 │   ├── clients/                 # Arbeitsagentur API client
 │   ├── core/                    # Settings and Elasticsearch connection pool
 │   ├── repositories/            # Elasticsearch repository and index mapping
@@ -159,14 +164,16 @@ IR-Arena/
 │       ├── search_service.py    # Search orchestration service
 │       ├── evaluation/          # IRMetricsCalculator and SearchEvaluator
 │       ├── fusion/              # ReciprocalRankFusion and WeightedScoreFusion
-│       └── ingestion/           # Skill extraction, job filtering, and normalization
+│       └── ingestion/           # Skill extraction, German seniority detection, and normalization
 └── tests/                       # Unit and integration test suite
 ```
 
-## Running Tests
+## Quality Assurance
 
-Run the full test suite with pytest:
+Run the test suite, linter, and type checker:
 
 ```bash
 uv run pytest
+uv run ruff check .
+uv run mypy src scripts
 ```
